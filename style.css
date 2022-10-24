@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #dccefb;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2em;
+    color: #414141;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 30px 2px whitesmoke;;
+}
+
+.title {
+    margin: 0 auto 20px 20px;
+    padding-top: 1em;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+
+.input-feild {
+    display: flex;
+    margin: 1em;
+
+}
+
+.input-feild label{
+    width: 100px;
+}
+
+.info {
+    outline: none;
+    font-size: 1rem;
+    padding: .75em 1em;
+    border-radius: 3px;
+    
+}
+
+
+h3 {
+    color: rgb(230, 64, 64);
+    font-size: 2em; 
+    font-style: italic;
+}
+
+
+.input-feild input {
+    background: #EDEDED;
+    border: 1px solid #C7C7C7;
+    width: 300px;
+}
+
+input[type=file] {
+    border: none;
+    margin-left: 0;
+}
+
+
+.btn-info {
+    gap: 10px;
+}
+
+.btn-info .button {
+    width: 200px;
+    text-align: center;
+    background: #7543e2;
+    padding: 1em 1.75em;
+    color: white;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer; 
+}
+
+/* ==============
+    welcome page
+================= */
+.article {
+    padding: 2em;
+}
+
+.image-user {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.btn a{
+    display: inline-block;
+    color: #fff  ;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.25em 1.25em;
+    background: #25369a;
+    margin-top: 1em;
+}
+
+.information {
+    color: #25369a;
+    font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        padding: unset;
+        background: none;
+        box-shadow: none;
+
+    }
+    form {
+        background: none;
+    }
+
+    .input-feild {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .btn-info .button {
+        align-self: flex-start;
+        justify-self: center;
+        display: inline;
+        width: 100%;
+        padding: 1em;
+        margin: unset;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+
